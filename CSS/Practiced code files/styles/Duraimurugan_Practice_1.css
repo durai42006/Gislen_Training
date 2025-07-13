@@ -1,0 +1,22 @@
+h3{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
+.vralign
+{
+    p {
+      font-size: 18px;
+      line-height: 50px;
+      margin: 0 0 20px;
+      border: 2px solid black;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+      background-color: lightgray;
+    }
+    h4 {
+      margin-bottom: 5px;
+    }
+}

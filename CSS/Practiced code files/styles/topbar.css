@@ -1,0 +1,59 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav
+{
+    background-color: gray;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 524px;
+    height: 5vh;
+    position:relative;
+    border-radius: 8px;
+}
+nav a
+{
+    
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block ;
+    font-weight: 500;
+    padding: 0 20px;
+    color: white;
+    z-index: 1;
+}
+span
+{
+    background:linear-gradient(red,yellow);
+    height: 5vh;
+    width:70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+nav a:nth-child(1):hover~span{
+    left:0
+}
+nav a:nth-child(2):hover~span{
+    left:85px;
+}
+nav a:nth-child(3):hover~span{
+    left:170px
+}
+nav a:nth-child(4):hover~span{
+    left:260px;
+    width: 80px;
+}

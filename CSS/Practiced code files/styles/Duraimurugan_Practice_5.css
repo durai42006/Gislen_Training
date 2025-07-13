@@ -1,0 +1,10 @@
+.textimg
+{
+    background-image: url('/sam.jpeg');
+    background-clip:text;
+    color: transparent;
+    border: 20px solid blue;
+    padding: 140px;
+    background-size: contain;
+    font-size: 100px;
+}
