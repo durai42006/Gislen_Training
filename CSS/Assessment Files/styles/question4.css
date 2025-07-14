@@ -1,0 +1,23 @@
+
+table,th,td{
+    border: 2px solid rgb(12, 154, 197);
+    border-collapse: collapse;
+}
+th
+{
+    width: 100px;
+    background-color: white;
+}
+
+tr:nth-child(2n+1)
+{
+    background-color: lightgray;
+}
+tr:nth-child(2n)
+{
+    background-color: black;
+    color: white;
+}
+tr:hover{
+    background-color: skyblue;
+}

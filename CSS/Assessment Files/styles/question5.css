@@ -1,0 +1,42 @@
+
+div
+{
+    position: relative;
+}
+.first input
+{
+    display: block;
+    overflow: visible;
+    
+}
+.first input:focus
+{
+    padding: 10px 0;
+}
+.first input:focus::placeholder
+{
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    top: 1%;
+    z-index: 100;
+    
+}
+
+/* Don't know how to do that exactly*/
+
+.second input
+{
+    width: 200px;
+}
+.second p
+{
+    position: relative;
+    left: -150px;
+    display: inline;
+}
+.second input:focus
+{
+    position: relative;
+    top: 20px;
+}

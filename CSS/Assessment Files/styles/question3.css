@@ -1,0 +1,10 @@
+.odd::before
+{
+    content: "New";
+    color: orange;
+}
+.odd::after
+{
+    content: "Featured";
+    color: orange;
+}

@@ -1,0 +1,23 @@
+*
+{
+    box-sizing: border-boxs;
+}
+section
+{
+    padding: 10px;
+    width:95vw;
+    height:95vh;
+    background-image: linear-gradient(hsl(0, 100%, 46%),hsl(240, 100%, 47%)) ;
+}
+
+h1
+{
+    font-size: 5vw;
+    text-align: center;
+}
+p
+{
+    width:80%;
+    margin: 0 auto;
+    color:hsla(88, 68%, 52%, 0.5);
+}
