@@ -1,0 +1,85 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    width: 200px;
+    height: 200px;
+    perspective: 1500px;
+}
+.cube
+{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: spin 7s infinite linear ;
+}
+.cube .face
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid white;
+    opacity: 0.5;
+}
+
+
+.front
+{
+    transform: rotateX(0deg) translateZ(100px);
+    background: url(/assets/images/JPG/image-378.jpg);
+    background-size: contain;
+}
+.back
+{
+    transform: rotateX(-180deg) translateZ(100px);
+    background: url(/assets/images/JPG/banner.jpg);
+    background-size: cover;
+}
+.left
+{
+    transform: rotateY(-90deg) translateZ(100px);
+    background: url(/assets/images/JPG/banner.jpg);
+    background-size: cover;
+}
+
+.right
+{
+    transform: rotateY(90deg) translateZ(100px);
+    background: url(/assets/images/JPG/banner.jpg);
+    background-size: cover;
+}
+
+.top
+{
+    transform:  rotateX(90deg) translateZ(100px);
+    background: url(/assets/images/JPG/banner.jpg);
+    background-size: cover;
+}
+.bottom{
+    transform: rotateX(-90deg) translateZ(100px);
+    background: url(/assets/images/JPG/banner.jpg);
+    background-size: cover;
+}
+
+@keyframes  spin {
+    from
+    {
+        transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg) translateZ(120px);;
+    }
+}

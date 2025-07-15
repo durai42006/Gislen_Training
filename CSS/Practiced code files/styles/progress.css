@@ -1,0 +1,38 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+.parent
+{
+    width: 500px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 200px;
+    position: relative;
+}
+.child
+{
+    width:95%;
+    background-color: skyblue;
+    height: 80%;
+    border-radius: inherit;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    animation: loading 4s linear infinite;
+}
+
+@keyframes loading {
+    from
+    {
+        width: 0%;
+        height:70%   ;
+    }
+    to{
+        width: 95%;
+    }
+}
+
+
