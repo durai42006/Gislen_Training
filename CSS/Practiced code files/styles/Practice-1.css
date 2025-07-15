@@ -1,0 +1,40 @@
+*
+{
+    outline: none;
+}
+.parent-tooltip
+{
+    font-size:50px;
+    text-align: center;
+    position: relative;
+}
+.parent-tooltip:hover>.child-tooltip
+{
+    visibility: visible;
+    opacity: 1;
+}
+.parent-tooltip .child-tooltip
+{
+    visibility: hidden;
+    font-size:40px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position:absolute;
+    top:160%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 1s;
+    opacity: 0;
+}
+.parent-tooltip .child-tooltip::after{
+    content: "";
+    border: 10px solid;
+    border-color:  transparent transparent black transparent;
+    position:absolute;
+    left: 50%;
+    bottom: 100%;
+    z-index:-1;
+}
+
+
